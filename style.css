@@ -1,8 +1,19 @@
-* {
-    background-color:#FFFFFA;
-
+body{
+    font-family:Verdana, sans-serif;
 }
 
 nav, footer{
     background-color:#67DACB;
+}
+
+footer{
+    padding:5%;
+    bottom:0;
+}
+
+
+.flexrow{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2%;
 }
