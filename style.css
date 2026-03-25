@@ -42,3 +42,21 @@ body {
     font-weight: bold;
     margin-inline-end: 1%;
 }
+
+/*footer*/
+
+nav, footer{
+    background-color:#67DACB;
+}
+
+footer{
+    padding:5%;
+    bottom:0;
+}
+
+
+.flexrow{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2%;
+}
