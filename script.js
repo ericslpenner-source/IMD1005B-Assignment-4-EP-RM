@@ -28,3 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         handleViewportChange(mobileMq);
     })
+
+// back to top button
+    let backTopBtn = document.getElementById('backTop');
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backTopBtn.style.display = "block";
+        } else {
+            backTopBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    if (backTopBtn) {
+        backTopBtn.addEventListener('click', scrollToTop);
+    }
