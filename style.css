@@ -7,20 +7,56 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* padding: 1%; */
   background: #FFFFFA;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1%);
+} 
   margin: 0;
 }
 
 /* header/navbar */
 
 .logo {
-    margin-left: 2%;
-    width: 15%;
+    margin: 35%;
+    width: 70px;
+    align-items: center;
 }
 
 .primary-header {
     align-items: center;
     justify-content: space-between;
-    background: #67DACB;
+    background-color: #67DACB;
+}
+
+.mobile-nav-toggle {
+  display: block;
+  position: absolute;
+  z-index: 1001;
+  top: 5%;
+  right: 7%;
+
+  width: 30px;                 
+
+  background: url("Media Files/hamburgerbtn.png") center/contain no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  aspect-ratio: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1%;
+    height: 1%;
+    padding: 0;
+    margin: -1%;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .primary-navigation {
@@ -29,19 +65,65 @@ body {
     margin: 0;
 
     display: flex;
-    flex-direction: row;
-    gap: 10%;
+    flex-direction: column;
+    gap: var(--gap, 2%);
+
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 1000;
+
+    background: #67DACB;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+
+    padding-top: 5em;
 }
 
 .primary-navigation a {
     text-decoration: none;
-    padding: 2% 4%;
-    margin-top: 10%;
+    color: #FFFFFA;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
 }
 
 .primary-navigation a > span {
     font-weight: bold;
-    margin-inline-end: 1%;
+    margin-inline-end: 0.75em;
+}
+
+@media (min-width: 48em) {
+    .mobile-nav-toggle {
+        display: none;
+    }
+
+    .primary-navigation {
+
+        display: flex;
+        flex-direction: row;
+        position: static;
+        transform: none;
+
+        background: #67DACB;
+        gap: var(--gap);
+    }
+}
+
+.primary-navigation[data-visible="true"] {
+    transform: translateX(50%);
+}
+
+@media (min-width: 50%) and (max-width: 55%) {
+  .primary-navigation a > span[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .primary-navigation {
+    --gap: clamp(1.5rem, 5vw, 3rem);
+    padding-block: 2rem;
+    padding-inline: clamp(3rem, 5vw, 10rem);
+  }
 }
 
 /*footer*/

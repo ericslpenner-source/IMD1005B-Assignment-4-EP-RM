@@ -9,42 +9,48 @@
 
 <body>
 
-<header class="primary-header flex">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header class="primary-header flex">
   <div>
     <img src="Media Files/CalsLogo.png" class="logo">
   </div>
 
   <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
-    hi
+    <span class="visually-hidden">Menu</span>
   </button>
 
 <nav>
-  <ul id="primary-navigation" class="primary-navigation flex">
+  <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
     <li class="active">
       <a href="index.html">
-        <span aria-hidden="true">Home</span>
+        <span>Home</span>
       </a>
     </li>
     <li>
       <a href="pastries.html">
-        <span aria-hidden="true">Pastries</span>
+        <span>Pastries</span>
       </a>
     </li>
     <li>
       <a href="catering.html">
-        <span aria-hidden="true">Catering</span>
+        <span>Catering</span>
       </a>
     </li>
     <li>
       <a href="contactus.html">
-        <span aria-hidden="true">Contact Us</span>
+        <!-- <span>Contact Us</span> Test -->
       </a>
     </li>
   </ul>
 </nav>
-
-</header>
+</header> 
 
 
 <footer loading="lazy">
@@ -58,6 +64,7 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>
