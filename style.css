@@ -22,8 +22,9 @@ body *{
 /* header/navbar */
 
 .logo {
-    margin: 35%;
-    width: 70px;
+    margin: 9%;
+    margin-left:18%;
+    width: 200px;
     align-items: center;
 }
 
