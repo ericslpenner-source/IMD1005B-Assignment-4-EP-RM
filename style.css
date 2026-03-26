@@ -1,6 +1,6 @@
 
 a {
-    color: white;
+    color: #FFFFFA;
 }
 
 body {
@@ -8,6 +8,10 @@ body {
   padding: 0;
   background: #FFFFFA;
   margin:0;
+}
+
+body *{
+    color:#FFFFFA;
 }
 
 .flex {
@@ -18,9 +22,10 @@ body {
 /* header/navbar */
 
 .logo {
-    margin: 35%;
-    width: 70px;
-    align-items: center;
+    margin: 9%;
+    margin-left:18%;
+    width: 200px;
+    align-items: center; 
 }
 
 .primary-header {
@@ -132,6 +137,7 @@ nav, footer{
 }
 
 footer{
+    margin-top:1.5%;
     padding:5%;
     bottom:0;
 }
