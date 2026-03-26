@@ -130,6 +130,18 @@ body *{
   }
 }
 
+/* back to top button */
+
+#backTop {
+  position: relative;
+  left: 80%;
+  cursor: pointer;
+  background: none;
+  color: #513417;
+  border: none;
+  font-weight: bold;
+}
+
 /*footer*/
 
 nav, footer{
