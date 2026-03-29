@@ -52,6 +52,18 @@
 </nav>
 </header> 
 
+<form>
+  <label for="firstName">First Name</label><br>
+  <input type="text" id="firstName" name="firstName" placeholder="..."><br>
+  <label for="lastName">Last Name</label><br>
+  <input type="text" id="lastName" name="lastName" placeholder="..."><br>
+  <label for="userEmail">Email address</label><br>
+                <input type="email" id="userEmail" name="userEmail" placeholder="..."><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
+                <button type="submit" id="submitButton" onclick="validateForm()">Submit</button>
+</form>
+
 <button id="backTop">Back to Top</button>
 
 <footer loading="lazy">
