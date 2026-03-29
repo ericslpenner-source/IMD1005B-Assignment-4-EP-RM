@@ -52,16 +52,29 @@
 </nav>
 </header> 
 
+<h1>Place an Order</h1>
 <form>
   <label for="firstName">First Name</label><br>
   <input type="text" id="firstName" name="firstName" placeholder="..."><br>
   <label for="lastName">Last Name</label><br>
   <input type="text" id="lastName" name="lastName" placeholder="..."><br>
   <label for="userEmail">Email address</label><br>
-                <input type="email" id="userEmail" name="userEmail" placeholder="..."><br>
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
-                <button type="submit" id="submitButton" onclick="validateForm()">Submit</button>
+  <input type="email" id="userEmail" name="userEmail" placeholder="..."><br>
+  <label for="userPhone">Phone number (optional)</label><br>
+  <!-- date and time system goes here -->
+  <input type="text" id="userPhone" name="userPhone" placeholder="..."><br>
+  <label for="message">Products and Special Instructions</label><br>
+  <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
+  <button type="submit" id="submitButton" onclick="validateForm()">Submit</button>
+</form>
+
+<h1>Automatic Quote</h1>
+<form>
+  <!-- date and time system goes here -->
+  <!-- if we figure out dropdowns maybe a dropdown for the day of the week -->
+  <label for="numAttendees">Number of Attendees</label><br>
+  <input type="number" id="numAttendees" name="numAttendees" placeholder="#"><br>
+  <label id="quoteOutput"></label>
 </form>
 
 <button id="backTop">Back to Top</button>
@@ -78,6 +91,7 @@
 </footer>
 
 <script src="script.js"></script>
+<script src='forms.js'></script>
 </body>
 
 </html>
