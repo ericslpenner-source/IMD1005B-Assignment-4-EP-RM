@@ -19,3 +19,7 @@ function validateForm(){
         return false;
     }
 }
+
+function getQuote(){
+    
+}
