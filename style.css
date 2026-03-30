@@ -19,6 +19,18 @@ body *{
     gap: var(--gap, 1%);
 } 
 
+h1 {
+    color: #513417;
+}
+
+h4 {
+    color: #513417;
+}
+
+p1 {
+    color: #513417;
+}
+
 /* header/navbar */
 
 .logo {
@@ -128,6 +140,14 @@ body *{
     padding-block: 2rem;
     padding-inline: clamp(3rem, 5vw, 10rem);
   }
+}
+
+/* contact us page */
+
+main {
+    padding-top: 1%;
+    padding-bottom: 15%;
+    margin-left: 5%;
 }
 
 /* back to top button */
