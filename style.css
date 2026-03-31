@@ -181,9 +181,24 @@ footer{
     bottom:0;
 }
 
+footer h1{
+    color:#FFFFFA;
+    padding-left:0%;
+}
+
 
 .flexrow{
     display:flex;
     flex-wrap:wrap;
     gap:2%;
+}
+
+/*forms*/
+
+form{
+    padding-left:3%;
+}
+
+form *{
+    color:#090200;
 }
