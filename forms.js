@@ -21,5 +21,10 @@ function validateForm(){
 }
 
 function getQuote(){
-    
+    let weekDay = document.forms["quoteForm"]["weekDay"].value;
+    let packageValue = document.forms["quoteForm"]["cateringPackage"].value;
+    let numAttendees = document.forms["quoteForm"]["numAttendees"].value;
+    let quote = weekDay * packageValue * numAttendees;
+    let quoteOutput = document.getElementById("quoteOutput");
+    quoteOutput.innerText = `Catering this event will cost $` + quote + `.`;
 }

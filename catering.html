@@ -61,8 +61,9 @@
   <label for="userEmail">Email address</label><br>
   <input type="email" id="userEmail" name="userEmail" placeholder="..."><br>
   <label for="userPhone">Phone number (optional)</label><br>
-  <!-- date and time system goes here -->
   <input type="text" id="userPhone" name="userPhone" placeholder="..."><br>
+  <label for="pickupTime">Date and Time of Pickup</label><br>
+  <input type="datetime-local" id="pickupTime" name="pickupTime"><br>
   <label for="message">Products and Special Instructions</label><br>
   <textarea id="message" name="message" rows="10" cols="60"></textarea><br><br>
   <button type="submit" id="submitButton" onclick="validateForm()">Submit</button>
@@ -70,12 +71,26 @@
 
 <h1>Automatic Quote</h1>
 <form id="quoteForm">
-  <!-- date and time system goes here -->
-  <!-- if we figure out dropdowns maybe a dropdown for the day of the week -->
+  <!-- <label for="eventTime">Date and Time of Event</label><br>
+  <input type="datetime-local" id="eventTime" name="eventTime"><br> -->
+  <label for="weekDay">Day</label><br>
+  <select id="weekDay" name="weekDay">
+    <option value="1.5">Sunday</option>
+    <option value="1">Monday</option>
+    <option value="1">Tuesday</option>
+    <option value="1">Wednesday</option>
+    <option value="1">Thursday</option>
+    <option value="1">Friday</option>
+    <option value="1.5">Saturday</option>
+  </select><br>
   <label for="numAttendees">Number of Attendees</label><br>
   <input type="number" id="numAttendees" name="numAttendees" placeholder="#"><br>
-  <!-- catering package dropdown ok we really need dropdowns. I'll find how to do it -->
-  <button type="submit" id="quoteSubmit" onclick="getQuote()">Submit</button>
+  <label for="cateringPackage">Catering Package</label><br>
+  <select id="cateringPackage" name="cateringPackage">
+    <option value="20">Original Package</option>
+    <option value="60">Deluxe Package</option>
+  </select><br>
+  <button type="button" id="quoteSubmit" onclick="getQuote()">Submit</button><br>
   <label id="quoteOutput"></label>
 </form>
 
