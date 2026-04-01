@@ -21,7 +21,10 @@ body *{
 
 h1 {
     color: #513417;
-    margin-left:2%;
+}
+
+h3 {
+    color: #513417;
 }
 
 h4 {
@@ -29,6 +32,10 @@ h4 {
 }
 
 p1 {
+    color: #513417;
+}
+
+p2 {
     color: #513417;
 }
 
@@ -143,9 +150,62 @@ p1 {
   }
 }
 
+/* landing page */
+
+.bannerimg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.maincontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.indeximg1 {
+    width: 90%;
+    border-radius: 3%;
+    align-self: center;
+}
+
+.maintext {
+    background-color: #C8EDE1;
+    border-radius: 3%;
+    text-wrap: inherit;
+    padding: 3%;
+}
+
+.mtext {
+    color: #3E6562;
+}
+
+.reviewscontainer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+    row-gap: 2%;
+    column-gap: 2%;
+}
+
+.reviewimg {
+    width: 90%;
+    border-radius: 3%;
+}
+
+.reviews {
+    text-wrap: inherit;
+}
+
 /* contact us page */
 
-main {
+.contactmain {
     padding-top: 1%;
     padding-bottom: 5%;
     margin-left: 5%;
