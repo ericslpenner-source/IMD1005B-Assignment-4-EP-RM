@@ -113,6 +113,12 @@ p2 {
     color: #FFFFFA;
     padding: 0.5rem 1rem;
     margin-top: 2rem;
+    background-color:#38786f;
+    border-radius: 20px;
+}
+
+.primary-navigation a:hover {
+    background-color:#266159;
 }
 
 .primary-navigation a > span {
@@ -185,7 +191,7 @@ p2 {
 }
 
 .mtext {
-    color: #3E6562;
+    color: #25514b;
 }
 
 .reviewscontainer {
@@ -247,10 +253,21 @@ footer{
     bottom:0;
 }
 
-footer h1{
+footer h2{
     color:#FFFFFA;
     padding-left:0%;
 }
+
+footer span, footer h2{
+    background-color: #38786f;
+    padding: 0.5rem 1rem;
+    border-radius:20px;
+}
+
+footer span:hover{
+    background-color: #266159;
+}
+
 
 
 .flexrow{
@@ -296,7 +313,7 @@ form *{
 .pastryImage{
     border-radius: 20px;
     /* width:60%; */
-    width:270px;
+    width:80%;
     height:auto;
 }
 
@@ -314,9 +331,16 @@ form *{
     padding:2.5%;
     border-radius: 10px;
     margin-top:1%;
-    transition:all ease 0.2s;
+    /* transition:all ease 0.2s; */
 }
 
 .pastryButton:hover{
-    padding:3%;
+    /* padding:3%; */
+    background-color: #342111;
+}
+
+/* map frame */
+
+iframe{
+    margin-top:3.4%;
 }
