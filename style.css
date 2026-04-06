@@ -284,6 +284,12 @@ form{
 
 form *{
     color:#513417;
+    background-color: #FDFDFC;
+    border-color:#513417;
+}
+
+form button{
+    margin-top:1%;
 }
 
 /* Pastries grid */
