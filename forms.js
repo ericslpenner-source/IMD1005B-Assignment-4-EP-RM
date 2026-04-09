@@ -1,3 +1,4 @@
+//catering form validation
 function validateForm(){
     let firstName = document.forms["contactForm"]["firstName"].value;
     if(firstName == ""){
@@ -20,6 +21,7 @@ function validateForm(){
     }
 }
 
+//calculates the quote when button is clicked
 function getQuote(){
     let weekDay = document.forms["quoteForm"]["weekDay"].value;
     let packageValue = document.forms["quoteForm"]["cateringPackage"].value;
